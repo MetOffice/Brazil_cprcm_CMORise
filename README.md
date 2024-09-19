@@ -77,6 +77,11 @@ The netCDF files metadata includes information about the timestep (60s or 1/1440
 the experiment name and suite id and a link to this url.   
 
 ### Licensing and data use:
-Citation : Halladay, K., Kahana, R., Johnson, B. et al. Convection-permitting climate simulations for South America with the Met Office Unified Model. Clim Dyn 61, 5247–5269 (2023). https://doi.org/10.1007/s00382-023-06853-0
+Citations:
+Halladay, K., Kahana, R., Johnson, B. et al. Convection-permitting climate simulations for South America with the Met Office Unified Model. Clim Dyn 61, 5247–5269 (2023). https://doi.org/10.1007/s00382-023-06853-0
+
+Kahana, R., Halladay, K. et al. Future precipitation projections for Brazil and tropical South America from a Convection-permitting climate simulation. Front. Clim.
+Sec. Predictions and Projections Volume 6 (2024) doi: 10.3389/fclim.2024.1419704 
+https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2024.1419704/abstract
 
 
