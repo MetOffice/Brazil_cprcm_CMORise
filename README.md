@@ -24,7 +24,42 @@ We have used a Python-based tool for converting the UM output into CMOR standard
 Climate Data Dissemination System (CDDS) team at the Met Office (https://github.com/MetOffice/CDDS) and was extensively
 used to convert the Met Office UM data for CMIP6. 
 
-## Data conversion: progress table
+## Data conversion: progress table (correct on 23/12/2024)
+
+| variables.txt 	| STASH code	          | CF standard name / description	      | CMORised?	|	         |    |
+|-----------------|-----------------------|---------------------------------------|----------|-----------|-----|
+| HOURLY			    |                       |                                       | Hindcast	  | PD	    | FUT |
+| E1hr/pr:apq	    | m01s04i203+ m01s04i204 | 	precipitation_flux (THM)	          | yes	        | yes	  | yes |
+|tas:ap1| m01s03i236	| 1.5m temperature (T1H)	| no	| no	| no |
+|hfss:ape	|m01s03i217	|SH at surface (THM)	|No	|no|	no|
+|hfls:ape	|m01s03i234	|LH at surface (THM)	|no	|no	|no|
+|apc/psl:apc	|m01s16s222	|mslp| 	no	|no	|no|
+|3-HOURLY		||	|Hindcast	|PD	|FUT|
+|ps:apd	| m01s00i409	|Surface pressure  (T3HM)	|No	|no|	no|
+|mrro:apd	|m01s08i234 + m01s08i235| 	Total runoff (T3HM)|	No	|no	|no|
+|rss:apd	|m01s01i201	|Net SW down at surface (T3HM)	|No	|no	|no|
+|:apd	|m01s02i201	|Net LW down at surface (T3HM)	|No	|no|	no|
+|rsds:apd	|m01s01i235|	Downwelling SW surface (T3HM)|	No	|no	|no|
+|rlds:apd	|m01s02i207	|Downwelling LW surface (T3HM)	|No	|no|	no|
+|ts:apd	|m01s00i024	|Surface temperature (T3H)	|No	|no	|no|
+|huss:apd	|m01s03i237	|specific humidity at 1.5m (T3H)	|No	|no|	no|
+|DAILY		|	|		|Hindcast	|PD	|FUT|
+|day/pr:apa| 	m01s04i203+ m01s04i204 | 	precipitation_flux 	|Yes	|yes	|yes|
+|day/tas:apa| 	m01s03i236 [lbproc=128] |	air_temperature Mean 	|yes	|yes|	no|
+|day/tasmin:apa| 	m01s03i236 [lbproc=4096]| 	air_temperature Min| 	Yes	|yes	|yes|
+|day/tasmax:apa 	|m01s03i236 [lbproc=8192]| 	air_temperature Max |	Yes	|yes|	yes|
+|Eday/ts:apa| 	m01s00i024 |	surface_temperature| 	Yes|	yes|	yes|
+|day/huss:apa |	m01s03i237 [lbproc=128]| 	specific_humidity 	|yes	|yes	|No|
+|day/hurs:apa| 	m01s03i245 [lbproc=128] |	relative_humidity 	|yes	|yes	|no|
+|day/evspsbl:apa	|m01s03i223	|evapotranspiration	|no	|no	|no|
+|day/mrso:apb|	Level sum (m01s08i223 [lbproc=128]) |	Soil moisture content| 	yes |no|	no|
+|apa	|m01s03i225	|Uwind 10m	|No	|no	|No|
+|apa	|m01s03i224	|Vwind 10m	|no	|no	|no|
+|apb	|m01s30i201	|*U wind on pressure levels|	No		|no|no|
+|apb	|m01s30i202|	*V wind on pressure levels	|No		|no|no|
+|apb	|m01s30i205	|*q on pressure levels	|no|no|no|		
+
+*each pressure level needs to be processed separately 
 
 ## Brazil CPRCM experiment: Simulations segments, calendar and spinup
 Each of the three simulations was split into two segments of 5 years (+1 year spinup), which were run in parallel
