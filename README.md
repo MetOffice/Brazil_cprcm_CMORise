@@ -24,7 +24,7 @@ We have used a Python-based tool for converting the UM output into CMOR standard
 Climate Data Dissemination System (CDDS) team at the Met Office (https://github.com/MetOffice/CDDS) and was extensively
 used to convert the Met Office UM data for CMIP6. 
 
-## Data conversion: progress table (correct on 23/12/2024)
+## Data conversion: progress table (correct on 08/07/2025)
 
 | variables.txt 	| STASH code	          | CF standard name / description	      | CMORised?	|	         |    |
 |-----------------|-----------------------|---------------------------------------|----------|-----------|-----|
