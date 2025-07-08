@@ -30,7 +30,7 @@ used to convert the Met Office UM data for CMIP6.
 |-----------------|-----------------------|---------------------------------------|----------|-----------|-----|
 | HOURLY			    |                       |                                       | Hindcast	  | PD	    | FUT |
 | E1hr/pr:apq	    | m01s04i203+ m01s04i204 | 	precipitation_flux (THM)	          | yes	        | yes	  | yes |
-|tas:ap1| m01s03i236	| 1.5m temperature (T1H)	| no	| no	| no |
+|tas:ap1| m01s03i236	| 1.5m temperature (T1H)	| yes	| yes	| yes |
 |hfss:ape	|m01s03i217	|SH at surface (THM)	|No	|no|	no|
 |hfls:ape	|m01s03i234	|LH at surface (THM)	|no	|no	|no|
 |apc/psl:apc	|m01s16s222	|mslp| 	no	|no	|no|
